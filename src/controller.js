@@ -4,7 +4,7 @@ const BASE_URL = `https://westus.api.cognitive.microsoft.com/emotion/v1.0/recogn
 const IMAGE_URL = 'localhost:300/image'
 
 
-function getEmotionAnalysis(req, res, next) {
+function getEmotionAnalysis(req, res) {
   request({
     url: BASE_URL,
     method: 'POST',
@@ -21,6 +21,27 @@ function getEmotionAnalysis(req, res, next) {
   })
 }
 
+function postImageURL(req, res) {         //FIGURE OUT HOW TO INSERT FACEURL FROM IMAGECAPTURE
+  request({
+    url: '/API/imageURL',
+    method: 'POST',
+    body: JSON.stringify({url: /*FACEURL GOES HERE SOMEHOW!!!*/})
+  })
+  function (error, response, body) {
+   if (!error && response.statusCode == 200) {
+     res.send(body)
+   }
+ })
+}
+
+function getImageURL(req, res) {        //FIGURE OUT HOW TO GET THE IMAGE URL FROM THE BACKEND
+  request({
+//MAGIC HAPPENS HERE?????????
+  })
+}
+
 module.exports = {
-  getEmotionAnalysis: getEmotionAnalysis
+  getEmotionAnalysis: getEmotionAnalysis,
+  postImageURL: postImageURL,
+  getImageURL: getImageURL
 };
