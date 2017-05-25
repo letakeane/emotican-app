@@ -1,18 +1,19 @@
 const request = require('request')
-const API_KEY = require('./key')
-const BASE_URL = `https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize`
-const IMAGE_URL = 'localhost:300/image'
+require('dotenv').load()
+const API_KEY = process.env.EMOTION_API_KEY
+const API_URL = `https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize`
+const APP_BASE_URL = 'localhost:3000'
 
 
 function getEmotionAnalysis(req, res) {
   request({
-    url: BASE_URL,
+    url: API_URL,
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'Ocp-Apim-Subscription-Key': API_KEY
     },
-    body: JSON.stringify({url: IMAGE_URL})
+    body: JSON.stringify({url: /*IMAGE URL GOES HERE SOMEHOW*/})
   },
    function (error, response, body) {
     if (!error && response.statusCode == 200) {
