@@ -1,7 +1,18 @@
 import React from 'react';
 
-export const EmotionResults = () => {
+
+export const EmotionResults = ({ results }) => {
+  const displayResults = () => {
+    if (!results.length) {
+      return (
+        <h2 className='no-results'>Take a picture to see your expression!</h2>
+      )
+    }
+  }
+
   return (
-    <div>Emotion results go here</div>
+    <div className='emotion-results'>
+      {displayResults()}
+    </div>
   )
 }

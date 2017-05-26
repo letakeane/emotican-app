@@ -5,9 +5,9 @@ export const analyzeResponse = (response) => {
     return scores[b] - scores[a];
   })
   let emotionDisplay = sortedEmotions.map(emotion => {
-    if (scores[emotion] > 0.5) {
+    if (scores[emotion] > 0.75) {
       return `mostly <span className="emotion-score">${emotion.toLowerCase()}</span>`
-    } else if (scores[emotion] < 0.5 && scores[emotion] > 0.005) {
+    } else if (scores[emotion] < 0.75 && scores[emotion] > 0.05) {
       return `a little <span className="emotion-score">${emotion.toLowerCase()}</span>`
     }
   })

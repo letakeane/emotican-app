@@ -22,7 +22,7 @@
 //   })
 // }
 //
-// function postImageURL(req, res) {         //FIGURE OUT HOW TO INSERT FACEURL FROM IMAGECAPTURE
+// function postImageURL(req, res) { //FIGURE OUT HOW TO INSERT FACEURL FROM IMAGECAPTURE
 //   request({
 //     url: '/API/imageURL',
 //     method: 'POST',
