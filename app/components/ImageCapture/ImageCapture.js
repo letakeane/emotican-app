@@ -22,64 +22,41 @@ export default class ImageCapture extends Component {
     });
   }
 
-  endImageCapture() {
-console.log('trying to stop video');
-    const video = document.querySelector('video');
+  endImageCapture(video) {
     video.pause();
   }
 
-  storeData(faceURL) {
-    const headers = {
-      "method": "POST",
-      "hostname": "api.imgur.com",
-      "port": null,
-      "path": "/3/image",
-      "headers": {
-        "//authorization": "Client-ID 10c0cf1412fad3",
-        "authorization": "Bearer 7887599b4a9c2cec883836f79b9612f772bb4a01"
+
+
+
+
+  dataURItoBlob(dataURI) {
+      let binary = atob(dataURI.split(',')[1]);
+      let array = [];
+      for(let i = 0; i < binary.length; i++) {
+          array.push(binary.charCodeAt(i));
       }
-    }
-
-    const body = {
-      "image": `'${faceURL}'`,
-      "album": "{M5OtG}",
-      "name": 'face.png',
-      "type": 'url'
-    }
-
-    const request = {
-      "method": "POST",
-      "headers": headers,
-      "body": body
-    }
-
-    fetch('https://api.imgur.com/3/image', request)
-      .then(resp => resp.json())
-      .then(data => {
-        console.log(data.link);
-      // this.props.analyzeEmotions(faceURL);
-      })
-      .catch(error => console.log('error posting to imgur: ', error))
-  }
-
-  takeSnapshot(video, ctx, canvas) {
-    if (video) {
-      ctx.drawImage(video, 350, 20, 600, 700, 0, 0, 300, 350);
-      this.endImageCapture(video);
-      canvas.toBlob((blob) => {
-        let faceURL = URL.createObjectURL(blob);
-        console.log(faceURL);
-      })
-        // this.storeData(faceURL);
-    }
+      return new Blob([new Uint8Array(array)], {type: 'image/jpeg'});
   }
 
   captureImage() {
     const video = document.querySelector('video');
     const canvas = document.querySelector('canvas');
     const ctx = canvas.getContext('2d');
-    this.takeSnapshot(video, ctx, canvas);
+
+    ctx.drawImage(video, 350, 20, 600, 700, 0, 0, 300, 350);
+    this.endImageCapture(video);
+
+    let dataUrl = canvas.toDataURL("image/jpeg");
+    let blobData = this.dataURItoBlob(dataUrl);
+    this.props.analyzeEmotions(blobData);
   }
+
+
+
+
+
+
 
   render() {
     return (
