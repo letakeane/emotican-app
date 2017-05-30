@@ -1,14 +1,16 @@
 export const analyzeResponse = (data) => {
-  let scores = data.scores;
+  let scores = data[0].scores;
   let emotions = Object.keys(scores);
   let sortedEmotions = emotions.sort((a, b) => {
     return scores[b] - scores[a];
   })
   let emotionDisplay = sortedEmotions.map(emotion => {
-    if (scores[emotion] > 0.75) {
-      return `mostly <span className="emotion-score">${emotion.toLowerCase()}</span>`
-    } else if (scores[emotion] < 0.75 && scores[emotion] > 0.05) {
-      return `a little <span className="emotion-score">${emotion.toLowerCase()}</span>`
+    if (scores[emotion] > 0.6) {
+      return {quantifier: 'mostly',
+              emotion: emotion.toLowerCase()}
+    } else if (scores[emotion] < 0.6 && scores[emotion] > 0.25) {
+      return {quantifier: 'a little bit of',
+              emotion: emotion.toLowerCase()}
     }
   })
   return emotionDisplay
