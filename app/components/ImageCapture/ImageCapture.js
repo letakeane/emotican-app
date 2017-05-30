@@ -91,7 +91,7 @@ console.log('trying to stop video');
                 onClick={() => this.captureImage()}>
           take picture
         </button>
-        <canvas height='350px' width='300px' hidden></canvas>
+        <canvas height='350px' width='300px' ></canvas>
       </article>
     )
   }
