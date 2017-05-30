@@ -67,21 +67,9 @@ console.log('trying to stop video');
       ctx.drawImage(video, 350, 20, 600, 700, 0, 0, 300, 350);
       this.endImageCapture(video);
       canvas.toBlob((blob) => {
-          let newImg = document.createElement('img');
-          let att = document.createAttribute("class");
-          att.value = "user-image";
-          newImg.setAttributeNode(att);
-          let url = URL.createObjectURL(blob);
-
-          newImg.onload = () =>{
-              URL.revokeObjectURL(url);
-            };
-
-            newImg.src = url;
-            document.body.appendChild(newImg);
-        const faceURL = document.querySelector('.user-image').src;
-  console.log(faceURL);
-        })
+        let faceURL = URL.createObjectURL(blob);
+        console.log(faceURL);
+      })
         // this.storeData(faceURL);
     }
   }
