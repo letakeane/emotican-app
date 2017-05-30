@@ -12,8 +12,8 @@ export default class Play extends Component {
     }
   }
 
-  analyzeEmotions(faceData) {
-    const body = faceData;
+  analyzeEmotions(faceBlob) {
+    const body = faceBlob;
 
     const headers = new Headers({
       'Content-Type': 'application/octet-stream',
@@ -24,14 +24,14 @@ export default class Play extends Component {
     fetch('https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize', {
         method: 'POST',
         headers: headers,
-        body: faceData
+        body: faceBlob
     })
     .then((response) => {
-      console.log('received response from API');
       response.json();
     })
     .then((data) => {
-      this.setState({emotions: analyzeResponse(data)})
+      let emotionData = analyzeResponse(data);
+      this.setState({emotions: emotionData})
     })
     .catch((error) => {
       console.log('error retreiving emotion analysis: ', error);

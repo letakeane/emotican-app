@@ -1,5 +1,5 @@
-export const analyzeResponse = (response) => {
-  let scores = response[0].Scores;
+export const analyzeResponse = (data) => {
+  let scores = data.scores;
   let emotions = Object.keys(scores);
   let sortedEmotions = emotions.sort((a, b) => {
     return scores[b] - scores[a];

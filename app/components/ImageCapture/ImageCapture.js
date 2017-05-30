@@ -26,29 +26,27 @@ export default class ImageCapture extends Component {
     video.pause();
   }
 
-  captureImage() {
-    const captureButton = document.querySelector('.take-picture');
-    
+  dataURItoBlob(dataURI) {
+      let binary = atob(dataURI.split(',')[1]);
+      let array = [];
+      for(let i = 0; i < binary.length; i++) {
+          array.push(binary.charCodeAt(i));
+      }
+      return new Blob([new Uint8Array(array)], {type: 'image/jpeg'});
+  }
 
+  captureImage() {
     const video = document.querySelector('video');
     const canvas = document.querySelector('canvas');
     const ctx = canvas.getContext('2d');
-    if (video) {
+    // if (video) {
       ctx.drawImage(video, 350, 20, 600, 700, 0, 0, 300, 350);
       this.endImageCapture(video);
 
-      let faceData = canvas.toBlob((blob) => {
-        let newImg = document.createElement('img'),
-            url = URL.createObjectURL(blob);
-
-          newImg.onload = () => {
-            URL.revokeObjectURL(url);
-          };
-
-          newImg.src = url;
-          return newImg;
-      }, 'image/png', 0.8);
-    }
+      let dataUrl = canvas.toDataURL("image/jpeg");
+      let blobData = this.dataURItoBlob(dataUrl);
+      this.props.analyzeEmotions(blobData);
+    // }
     // let faceData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
     // let faceData = canvas.toDataURL("image/png");
     // canvas.toBlob((blob) => {
