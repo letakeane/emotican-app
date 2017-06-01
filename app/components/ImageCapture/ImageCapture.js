@@ -22,13 +22,9 @@ export default class ImageCapture extends Component {
     });
   }
 
-  endImageCapture(video) {
+  endImageCapture(video, canvas) {
     video.pause();
   }
-
-
-
-
 
   dataURItoBlob(dataURI) {
       let binary = atob(dataURI.split(',')[1]);
@@ -45,11 +41,11 @@ export default class ImageCapture extends Component {
     const ctx = canvas.getContext('2d');
 
     ctx.drawImage(video, 350, 20, 600, 700, 0, 0, 300, 350);
-    this.endImageCapture(video);
 
     let dataUrl = canvas.toDataURL("image/jpeg");
     let blobData = this.dataURItoBlob(dataUrl);
     this.props.analyzeEmotions(blobData);
+    this.endImageCapture(video, canvas);
   }
 
 
