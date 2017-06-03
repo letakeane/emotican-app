@@ -5,10 +5,10 @@ export const analyzeResponse = (data) => {
     return scores[b] - scores[a];
   })
   let emotionDisplay = sortedEmotions.map(emotion => {
-    if (scores[emotion] > 0.6) {
+    if (scores[emotion] > 0.49) {
       return {quantifier: 'mostly',
               emotion: emotion.toLowerCase()}
-    } else if (scores[emotion] < 0.6 && scores[emotion] > 0.25) {
+    } else if (scores[emotion] < 0.49 && scores[emotion] > 0.25) {
       return {quantifier: 'a little bit of',
               emotion: emotion.toLowerCase()}
     }
