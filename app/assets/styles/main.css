@@ -95,6 +95,29 @@ li:hover a {
 
 
 
+/*INSTRUCTIONS*/
+.instructions-howto {
+  color: rgba(111, 157, 172, 1);
+}
+
+.instructions-img {
+  width: 60%;
+  margin: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.instruction-list {
+  -webkit-margin-start: 25%;
+}
+
+.instruction-list li {
+  width: 100%;
+  color: rgba(111, 157, 172, 1);
+  text-align: left;
+}
+
+
+
 
 /*PLAY*/
 .play {
@@ -159,8 +182,8 @@ video {
   transform: translateX(-50%);
 }
 
-.image-capture img {
-  display: none;
+.start-capture:hover, .take-picture:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 
