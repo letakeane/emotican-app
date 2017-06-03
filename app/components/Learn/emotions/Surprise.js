@@ -1,7 +1,9 @@
+import React from 'react';
+
 export const Surprise = () => {
   return (
-    <section>
-      <article>
+    <section className='emotion-learning'>
+      <article className='emotion-about'>
         <h2>What is surprise?</h2>
         <p>People are surprised when something unexpected happens.</p>
         <p>Maybe there was a loud noise, like a balloon popping, or a door slamming, and it startled them. Maybe something turned out differently than they thought it would, like a good grade on a test that they thought the did badly on, or getting a birthday present they didn't think they would receive.</p>

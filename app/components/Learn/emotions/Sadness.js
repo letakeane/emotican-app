@@ -1,7 +1,9 @@
+import React from 'react';
+
 export const Sadness = () => {
   return (
-    <section>
-      <article>
+    <section className='emotion-learning'>
+      <article className='emotion-about'>
         <h2>What is sadness?</h2>
         <p>People feel sad for many reasons, including when they are lonely, helpless, or disappointed.</p>
         <p>Maybe someone they care about is no longer around. Maybe they feel left out. Maybe they were hoping for something to happen but it didn't.</p>

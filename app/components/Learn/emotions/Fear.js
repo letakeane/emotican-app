@@ -1,7 +1,9 @@
+import React from 'react';
+
 export const Fear = () => {
   return (
-    <section>
-      <article>
+    <section className='emotion-learning'>
+      <article className='emotion-about'>
         <h2>What is fear?</h2>
         <p>People are afraid when they don't know what is going to happen, but worry that it will be bad.</p>
         <p>There are lots of different types of fear. Sometimes it's specific, like if someone is afraid of spiders or heights. Sometimes people are startled by a sudden noise, or a scary movie. Sometimes people are afraid of things that aren't dangerous, but fear usually helps keep us safe.</p>

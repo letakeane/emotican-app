@@ -3,7 +3,7 @@ body {
   font-family: 'Overpass Mono', sans-serif;
   font-weight: 100;
   margin: 0;
-  padding: 0;
+  padding: 0 0 50px 0;
 }
 
 #root {
@@ -188,4 +188,55 @@ video {
   font-weight: 700;
   line-height: 100%;
   margin: 0 0 20px 0;
+}
+
+
+
+/*LEARN SECTION*/
+.emotion-learning {
+  color: rgba(111, 157, 172, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.emotion-learning ul {
+  display: block;
+  list-style: initial;
+  width: 100%;
+  -webkit-padding-start: 80px;
+}
+
+.emotion-learning li {
+  text-align: left;
+  width: 90%;
+}
+
+.emotion-about {
+  width: 45%;
+}
+
+.about {
+  color: rgba(111, 157, 172, 1);
+  width: 60%;
+  margin: auto;
+}
+
+.about p {
+  text-align: left;
+}
+
+.about a {
+  font-size: 16px;
+}
+
+.about ul {
+  display: block;
+  list-style: initial;
+  width: 100%;
+}
+
+.about li {
+  text-align: left;
+  width: 90%;
 }

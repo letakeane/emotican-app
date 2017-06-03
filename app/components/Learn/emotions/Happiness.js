@@ -1,7 +1,9 @@
+import React from 'react';
+
 export const Happiness = () => {
   return (
-    <section>
-      <article>
+    <section className='emotion-learning'>
+      <article className='emotion-about'>
         <h2>What is happiness?</h2>
         <p>People feel happy when they have a sense of wellbeing: their needs are being met, they feel comfortable being themselves, and they enjoy what they are doing.</p>
         <p>Maybe they are spending time with friends and loved ones. Maybe they are baking, or drawing, or fixing something, or another activity they enjoy. Maybe they feel content and safe.</p>
