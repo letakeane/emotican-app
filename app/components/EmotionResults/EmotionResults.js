@@ -1,7 +1,7 @@
 import React from 'react';
 import { analyzeResponse } from '../../helper.js';
 
-export const EmotionResults = ({ results }) => {
+export const EmotionResults = ({ results, url }) => {
   const noResults = () => {
     return (
       <h2 className='no-results'>Take a picture to see your expression!</h2>
@@ -12,6 +12,7 @@ export const EmotionResults = ({ results }) => {
     let emotionsForDisplay = analyzeResponse(results);
     return (
       <div>
+        <img className='result-img' src={url} height='175px' width='150px' />
         <h2 className='results'>your expression is:</h2>
         {
           emotionsForDisplay.map((emotionObject, index) => {

@@ -165,6 +165,12 @@ video {
 
 
 /*EMOTION RESULTS*/
+.result-img {
+  margin: 20px;
+  border: 10px solid #629EAE;
+  border-radius: 50px;
+}
+
 .results {
   color: rgba(111, 157, 172, 1);
 }
