@@ -7,8 +7,13 @@ export default class Play extends Component {
   constructor() {
     super()
     this.state = {
-      emotions: []
+      emotions: [],
+      canvasURL: ''
     }
+  }
+
+  getImageURL(url) {
+    this.setState({canvasURL: url})
   }
 
   analyzeEmotions(faceBlob) {
@@ -37,8 +42,10 @@ export default class Play extends Component {
     return (
       <article className='play'>
         <PickEmotion />
-        <ImageCapture analyzeEmotions={this.analyzeEmotions.bind(this)} />
-        <EmotionResults results={this.state.emotions} />
+        <ImageCapture analyzeEmotions={this.analyzeEmotions.bind(this)}
+                      getImageURL={this.getImageURL.bind(this)}/>
+        <EmotionResults results={this.state.emotions}
+                        url={this.state.canvasURL} />
       </article>
     )
   }
