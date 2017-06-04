@@ -1,14 +1,23 @@
 {
-  "name": "example-api",
+  "name": "emotican",
   "version": "1.0.0",
-  "description": "MeatMeet",
+  "description": "an app to help kids learn to express their emotions through nonverbal communication",
   "scripts": {
     "build": "webpack --config ./webpack.config.js",
     "dev-server": "webpack-dev-server --hot --inline --content-base --history-api-fallback",
-    "start": "npm build && nodemon src/app.js"
+    "start": "npm build && nodemon src/app.js",
+    "test": "react-scripts test --env=jsdom"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/letakeane/emotican-express"
+  },
+  "keywords": [
+    "autism",
+    "therapy",
+    "emotions"
+  ],
+  "author": "Leta Keane",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.16.0",
@@ -32,8 +41,12 @@
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
+    "enzyme": "^2.8.2",
+    "fetch-mock": "^5.11.0",
     "fs": "0.0.1-security",
+    "react-addons-test-utils": "^15.5.1",
     "react-hot-loader": "^1.3.1",
+    "react-scripts": "^1.0.7",
     "webpack": "^1.14.0",
     "webpack-dev-middleware": "^1.9.0",
     "webpack-hot-middleware": "^2.15.0"
