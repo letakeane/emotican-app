@@ -34,6 +34,11 @@ button {
   padding: 0 20px;
 }
 
+.copyright-notice {
+  margin-top: 100px;
+  color: rgba(111, 157, 172, 0.5)
+}
+
 /*APP*/
 .App {
   text-align: center;
