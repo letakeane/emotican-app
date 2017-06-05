@@ -38,7 +38,7 @@ I set out to build an app that would do tangible good in the world. When I found
 
 The biggest challenges I have run into was correctly formatting the data pulled from the user's mediastream (via the webRTC API) to be acceptable to the Emotion API, and testing with the webRTC API (so far, I haven't solved this second challenge).
 
-####The stack:
+#### The stack:
 
 * The app is built primarily with React and Router.
 * It utilizes the WebRTC API to access the user's webcam
@@ -48,7 +48,7 @@ The biggest challenges I have run into was correctly formatting the data pulled 
 I built this using Turing's 'express boilerplate', because although it doesn't utilize it now, a future iteration of *emotican* will need it. I am also a greener-than-novice with express; I hope to use future iterations of this project to understand it better.
 
 
-####Future goals:
+#### Future goals:
 
 * The app is not currently very accessible; I hope to improve the webcam interface to audibly alert the user as to when their face is in the frame in order to make the app useful for the blind community.
 * I hope to add a secondary version of the game which presents users with photographs of diverse individuals (varying in age, race, gender, and identifiers) modeling various facial expressions, in order to help users recognize and identify emotions in others.
