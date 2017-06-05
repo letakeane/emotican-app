@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PickEmotion from '../PickEmotion/PickEmotion';
 import ImageCapture from '../ImageCapture/ImageCapture';
 import { EmotionResults } from '../EmotionResults/EmotionResults';
-import { key } from '../key';
+import { key } from '../key.js'
 
 export default class Play extends Component {
   constructor() {

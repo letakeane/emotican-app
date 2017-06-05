@@ -36,11 +36,7 @@ export const EmotionResults = ({ results, url }) => {
   }
 
   const displayResults = () => {
-    if (!results.length) {
-      return noResults();
-    } else {
-      return showResults();
-    }
+    return !results.length ? noResults() : showResults()
   }
 
   return (
