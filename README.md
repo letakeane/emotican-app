@@ -9,7 +9,7 @@ This project is currently in development. Next steps are to create components an
 
 ## Project Screen Shot(s)
 The initial wireframe/comp:
-![Initial wireframe/comp](http://imgur.com/a/Z8fSe)
+![Initial wireframe/comp](http://i.imgur.com/kXKRfGa.png)
 
 The app in use:
 * ![Screenshot of app in use; starting the webcam](http://i.imgur.com/Fy6BWnm.png)
