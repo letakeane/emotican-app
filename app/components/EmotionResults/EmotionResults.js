@@ -1,5 +1,5 @@
 import React from 'react';
-import { analyzeResponse } from '../../helper.js';
+import analyzeResponse from '../../lib/analyzeResponse.js';
 
 export const EmotionResults = ({ results, url }) => {
   const noResults = () => {

@@ -1,4 +1,4 @@
-export const analyzeResponse = (data) => {
+const analyzeResponse = (data) => {
   let scores = data[0].scores;
   let emotions = Object.keys(scores);
   let sortedEmotions = emotions.sort((a, b) => {
@@ -15,3 +15,5 @@ export const analyzeResponse = (data) => {
   })
   return emotionDisplay
 }
+
+export default analyzeResponse;
