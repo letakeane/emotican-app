@@ -9,7 +9,7 @@ export default class PickEmotion extends Component {
   }
 
   defineClass(emotion) {
-    return this.state.pickedEmotion === emotion ? 'emotion picked' : 'emotion'
+    return this.state.pickedEmotion === emotion ? `${emotion} emotion picked` : `${emotion} emotion`
   }
 
   pickEmotion(emotionString) {

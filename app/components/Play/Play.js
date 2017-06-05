@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PickEmotion from '../PickEmotion/PickEmotion';
 import ImageCapture from '../ImageCapture/ImageCapture';
 import { EmotionResults } from '../EmotionResults/EmotionResults';
+import { key } from '../key.js'
 
 export default class Play extends Component {
   constructor() {
@@ -21,7 +22,7 @@ export default class Play extends Component {
 
     const headers = new Headers({
       'Content-Type': 'application/octet-stream',
-      'Ocp-Apim-Subscription-Key': '5044b8a6914442cfbb74003672a494a0'
+      'Ocp-Apim-Subscription-Key': key
     })
 
     fetch('https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize', {
