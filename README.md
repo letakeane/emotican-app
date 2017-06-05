@@ -9,14 +9,14 @@ This project is currently in development. Next steps are to create components an
 
 ## Project Screen Shot(s)
 The initial wireframe/comp:
-[Initial wireframe/comp](http://imgur.com/a/Z8fSe)
+![Initial wireframe/comp](http://imgur.com/a/Z8fSe)
 
 The app in use:
-* [Screenshot of app in use; starting the webcam](http://i.imgur.com/Fy6BWnm.png)
-* [Screenshot of app in use; getting results](http://i.imgur.com/efQ4ijD.png)
+* ![Screenshot of app in use; starting the webcam](http://i.imgur.com/Fy6BWnm.png)
+* ![Screenshot of app in use; getting results](http://i.imgur.com/efQ4ijD.png)
 
 An example of the Learn component information:
-[Screenshot of the info about Happiness](http://i.imgur.com/lsKA9pJ.png)
+![Screenshot of the info about Happiness](http://i.imgur.com/lsKA9pJ.png)
 
 
 ## Installation and Setup Instructions
