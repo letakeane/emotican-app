@@ -24,7 +24,6 @@
     "dotenv": "^4.0.0",
     "express": "^4.14.0",
     "express-cors": "0.0.3",
-    "fs": "0.0.1-security",
     "nodemon": "^1.11.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
