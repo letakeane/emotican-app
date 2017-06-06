@@ -17,6 +17,10 @@ article {
 }
 
 /*GLOBAL*/
+button:focus {
+  outline: rgba(0, 0, 0, 0);
+}
+
 .hidden {
   display: none;
 }
