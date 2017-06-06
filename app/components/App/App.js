@@ -6,7 +6,6 @@ import Play from '../Play/Play';
 import { Learn } from '../Learn/Learn';
 
 class App extends Component {
-
   render() {
     return (
       <Router>
@@ -18,7 +17,9 @@ class App extends Component {
             <Route exact path='/' component={Play} />
             <Route exact path='/instructions' component={Instructions}/>
             <Route path='/learn' component={Learn} />
-            <p className='copyright-notice'>&#169; 2017 Leta Keane</p>
+            <footer>
+              <p className='copyright-notice'>&#169; 2017 Leta Keane</p>            
+            </footer>
         </div>
       </Router>
     )

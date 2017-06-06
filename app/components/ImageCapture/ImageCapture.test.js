@@ -20,12 +20,14 @@ describe('ImageCapture component tests', () => {
     expect(wrapper.state()).toEqual(expectedState);
   })
 
-  it.skip('should begin image capture on button click', () => {
+  it('should begin image capture on button click', () => {
+    const mockFn = jest.fn();
+    ImageCapture.prototype.beginImageCapture = mockFn
     const wrapper = shallow(<ImageCapture />);
     const startButton = wrapper.find('.start-capture');
     startButton.simulate('click');
 
-    expect(wrapper.beginImageCapture).toHaveBeenCalledTimes(1);
+    expect(mockFn).toHaveBeenCalledTimes(1);
   })
 
 
