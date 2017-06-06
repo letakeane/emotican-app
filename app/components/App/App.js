@@ -4,6 +4,7 @@ import { NavBar } from '../NavBar/NavBar';
 import { Instructions } from '../Instructions/Instructions';
 import Play from '../Play/Play';
 import { Learn } from '../Learn/Learn';
+import { Footer } from '../Footer/Footer';
 
 class App extends Component {
   render() {
@@ -17,9 +18,7 @@ class App extends Component {
             <Route exact path='/' component={Play} />
             <Route exact path='/instructions' component={Instructions}/>
             <Route path='/learn' component={Learn} />
-            <footer>
-              <p className='copyright-notice'>&#169; 2017 Leta Keane</p>            
-            </footer>
+            <Footer />
         </div>
       </Router>
     )
