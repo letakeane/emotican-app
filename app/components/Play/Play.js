@@ -11,6 +11,8 @@ export default class Play extends Component {
       emotions: [],
       canvasURL: ''
     }
+    this.analyzeEmotions = this.analyzeEmotions.bind(this)
+    this.getImageURL = this.getImageURL.bind(this)
   }
 
   getImageURL(url) {
@@ -43,10 +45,11 @@ export default class Play extends Component {
     return (
       <article className='play'>
         <PickEmotion />
-        <ImageCapture analyzeEmotions={this.analyzeEmotions.bind(this)}
-                      getImageURL={this.getImageURL.bind(this)}/>
+        <ImageCapture analyzeEmotions={this.analyzeEmotions}
+                      getImageURL={this.getImageURL}/>
         <EmotionResults results={this.state.emotions}
-                        url={this.state.canvasURL} />
+                        url={this.state.canvasURL}
+                        pickedEmotion={this.state.pickedEmotion} />
       </article>
     )
   }

@@ -1,11 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import analyzeResponse from '../../lib/analyzeResponse.js';
 
-export const EmotionResults = ({ results, url }) => {
+export const EmotionResults = ({ results, url, pickedEmotion }) => {
   const noResults = () => {
     return (
       <h2 className='no-results'>Take a picture to see your expression!</h2>
     )
+  }
+
+  const ifNotNeutralContemptRenderLink = (emotion) => {
+    if (emotion !== 'neutral' && emotion !== 'contempt') {
+      return (
+        <Link className='learn-more-link' to={`/learn/${emotion}`}>Learn more about {emotion}</Link>
+      )
+    }
   }
 
   const showResults = () => {
@@ -16,7 +25,7 @@ export const EmotionResults = ({ results, url }) => {
         <h2 className='results'>your expression is:</h2>
         {
           emotionsForDisplay.map((emotionObject, index) => {
-            if (emotionObject !== undefined) {
+            if (emotionObject !== undefined && emotionObject.emotion !== 'contempt') {
               return (
                 <div key={emotionObject.emotion}>
                   <h3 key={index}
@@ -26,6 +35,7 @@ export const EmotionResults = ({ results, url }) => {
                   <h2 className='emotion-score'>
                     {emotionObject.emotion}
                   </h2>
+                  {ifNotNeutralContemptRenderLink(emotionObject.emotion)}
                 </div>
               )
             }
@@ -36,7 +46,7 @@ export const EmotionResults = ({ results, url }) => {
   }
 
   const displayResults = () => {
-    return !results.length ? noResults() : showResults()
+    return (!results.length) ? noResults() : showResults()
   }
 
   return (
