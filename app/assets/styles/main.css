@@ -181,10 +181,10 @@ video {
 .face-oval {
   width: 150px;
   height: 200px;
-  border: 2px dashed rgba(237, 205, 156, 0.5);
-  -moz-border-radius: 70px / 90px;
-	-webkit-border-radius: 70px / 90px;
-	border-radius: 70px / 90px;
+  border: 8px dashed rgba(237, 205, 156, 0.3);
+  -moz-border-radius: 85px / 100px;
+	-webkit-border-radius: 85px / 100px;
+	border-radius: 85px / 100px;
   position: absolute;
   top: 150px;
   left: 50%;
