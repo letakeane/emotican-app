@@ -14,7 +14,7 @@ export const Surprise = () => {
       <article>
         <h2>What does surprise look like?</h2>
         <ul>
-          <li>Eyes wide open, or sometimes squeezeed shut</li>
+          <li>Eyes wide open, or sometimes squeezed shut</li>
           <li>Eyebrows raised</li>
           <li>Mouth usually open, sometimes lips are pursed into a small 'O' shape</li>
           <li>Depending on the situation, the person might freeze in place</li>

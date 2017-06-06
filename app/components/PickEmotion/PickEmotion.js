@@ -35,9 +35,6 @@ export default class PickEmotion extends Component {
         <button className={this.defineClass('scared')} onClick={() => this.pickEmotion('scared')}>
           scared
         </button>
-        <button className={this.defineClass('neutral')} onClick={() => this.pickEmotion('neutral')}>
-          neutral
-        </button>
       </article>
     )
   }

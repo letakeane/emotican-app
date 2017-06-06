@@ -16,7 +16,6 @@ export const LearnNav = () => {
   return (
     <nav>
       <ul>
-
         <li>
           <NavLink
             to="/learn/happiness"
@@ -59,7 +58,6 @@ export const LearnNav = () => {
               about
           </NavLink>
         </li>
-
       </ul>
     </nav>
   )

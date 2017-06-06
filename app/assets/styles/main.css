@@ -21,6 +21,10 @@ button:focus {
   outline: rgba(0, 0, 0, 0);
 }
 
+a:focus {
+  outline: rgba(0, 0, 0, 0);
+}
+
 .hidden {
   display: none;
 }
@@ -226,6 +230,22 @@ video {
   font-weight: 700;
   line-height: 100%;
   margin: 0 0 20px 0;
+}
+
+.learn-more-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: rgba(237, 205, 156, 1);
+  color: white;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.learn-more-link:hover {
+  font-weight: 700;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 
