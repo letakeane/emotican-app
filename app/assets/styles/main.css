@@ -251,7 +251,7 @@ video {
 }
 
 .learn-emotions p {
-  width: 40%;
+  min-width: 400px;
   color: rgba(111, 157, 172, 1);
   margin: 50px auto;
 }
