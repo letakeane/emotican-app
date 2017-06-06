@@ -18,7 +18,7 @@ export const EmotionResults = ({ results, url, pickedEmotion }) => {
   }
 
   const showResults = () => {
-    let emotionsForDisplay = analyzeResponse(results);
+    const emotionsForDisplay = analyzeResponse(results);
     return (
       <div>
         <img className='result-img' src={url} height='175px' width='150px' />

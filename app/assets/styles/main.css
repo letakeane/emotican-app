@@ -130,14 +130,11 @@ li:hover a {
 }
 
 
-
-
 /*PLAY*/
 .play {
   display: flex;
   justify-content: space-around;
 }
-
 
 
 /*PICK EMOTION*/
@@ -164,7 +161,6 @@ li:hover a {
   background-color: rgba(237, 205, 156, 1);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 
 /*IMAGE CAPTURE*/
@@ -249,8 +245,17 @@ video {
 }
 
 
-
 /*LEARN SECTION*/
+.learn-nav {
+  margin-top: 15px;
+}
+
+.learn-emotions p {
+  min-width: 400px;
+  color: rgba(111, 157, 172, 1);
+  margin: 50px auto;
+}
+
 .emotion-learning {
   color: rgba(111, 157, 172, 1);
   display: flex;
