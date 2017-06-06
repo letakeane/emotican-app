@@ -19,6 +19,9 @@ The app (v1) in use:
 An example of the Learn component information (v1):
 ![Screenshot of the info about Happiness](http://i.imgur.com/lsKA9pJ.png)
 
+Probably my favorite moment from v0.5 usability tests:
+![Screenshot of Dave using app](http://g.recordit.co/HP82wO4TRb.gif)
+
 
 ## Installation and Setup Instructions
 
@@ -60,4 +63,6 @@ I built this using Turing's 'express boilerplate', because although it doesn't u
 
 ## Resources
   - [Microsoft Cognitive Services Emotion API](https://azure.microsoft.com/en-us/services/cognitive-services/emotion/)
-  - Many thanks also to MDN, StackOverflow, my instructors, Jeff Duke for kindly doing PR reviews and giving me industry-level production insights, and the whole of the 1701-FE cohort for cheering me on, debugging issues, and loaning me their faces throughout the build of *emotican* v1 <3
+
+## Acknowledgements
+  Many thanks to MDN, StackOverflow, my instructors, Jeff Duke for kindly doing PR reviews and giving me industry-level production insights, and the whole of the 1701-FE cohort for cheering me on, debugging issues, and loaning me their faces throughout the build of *emotican* v1 <3
