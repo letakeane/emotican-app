@@ -55,7 +55,7 @@ export default class ImageCapture extends Component {
     return (
       <article className='image-capture'>
         <button className='start-capture'
-                onClick={() => this.beginImageCapture()}>Start video</button>
+                onClick={() => this.beginImageCapture()}>start camera</button>
         <video autoPlay muted='true' height='350px' width='300px'></video>
         <div className='face-oval'></div>
         <button className='take-picture'
