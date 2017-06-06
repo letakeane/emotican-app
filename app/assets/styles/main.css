@@ -233,10 +233,11 @@ video {
   align-items: center;
   justify-content: center;
   height: 50px;
+  width: 65%;
   background-color: rgba(237, 205, 156, 1);
   color: white;
   border-radius: 50px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 }
 
 .learn-more-link:hover {
