@@ -1,5 +1,6 @@
 ## Project Name & Pitch
-*emotican*: Many children, due to autism, developmental delays, or trauma have difficulty nonverbally communicating their emotions through facial expressions.
+### *emotican*:
+Many children, due to autism, developmental delays, or trauma have difficulty nonverbally communicating their emotions through facial expressions.
 
 A common practice in behavioral therapy is to build up muscle memory by playing "emotion charades" - the child is given an emotion to perform, and is also tasked with guessing what emotion another person is expressing.
 
