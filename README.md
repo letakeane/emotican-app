@@ -66,4 +66,4 @@ I built this using Turing's 'express boilerplate', because although it doesn't u
   - WebRTC API
 
 ## Acknowledgements
-  Many thanks to MDN, StackOverflow, my instructors, Jeff Duke for kindly doing PR reviews and giving me industry-level production insights, and the whole of the 1701-FE cohort for cheering me on, debugging issues, and loaning me their faces throughout the build of *emotican* v1 <3
+  Many thanks to MDN, StackOverflow, my instructors, Jeff Duke for kindly doing PR reviews and giving me industry-level production insights, Tiffany Nuessle for the fascinating conversations that sparked the idea for this app, and the whole of the 1701-FE cohort for cheering me on, debugging issues, and loaning me their faces throughout the build of *emotican* v1 <3
