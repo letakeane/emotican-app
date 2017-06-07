@@ -38,7 +38,7 @@ To use:
 * Open your browser to ```localhost:3000```
 
 ## Reflection
-*emotican* was a two-week-long school assignment, built in my third (of four) quarter at Turing School of Software and Design.
+*emotican* was a two-week-long school assignment, built in my third (of four) module at Turing School of Software and Design.
 
 I set out to build an app that would do tangible good in the world. When I found Cognitive Services' Emotion API, I immediately recalled conversations had with an old coworker who had once worked as a counselor for kids and families, and the "emotions charades" game she described, which helped her clients better learn to nonverbally communicate their emotions.
 
