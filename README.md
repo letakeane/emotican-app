@@ -4,7 +4,7 @@ Many children, due to autism, developmental delays, or trauma have difficulty no
 
 A common practice in behavioral therapy is to build up muscle memory by playing "emotion charades" - the child is given an emotion to perform, and is also tasked with guessing what emotion another person is expressing.
 
-Built with React, this 'game' utilizes Microsoft's Cognitive Services Emotion API and the device webcam to help children practice making and facial expressions. A planned future version will also help them recognize and identify facial expressions in others.
+Built with React, this 'game' utilizes Microsoft's Cognitive Services Emotion API and the device webcam to help children practice making (and, in a future iteration, recognizing/identifying) facial expressions. A planned future version will also help them recognize and identify facial expressions in others.
 
 ## Project Status
 
