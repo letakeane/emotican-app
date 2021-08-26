@@ -8,8 +8,10 @@ Built with React, this 'game' utilizes Microsoft's Cognitive Services Emotion AP
 
 ## Project Status
 
-This project is currently in development. Next steps are to create components and containers.
-
+<!-- This project is currently in development. Next steps are to create components and containers.
+ -->
+ This project is currently in an icebox and no further development is planned. The Azure facial emotion API this app is built on is no longer supported by Microsoft.
+ 
 ## Project Screen Shot(s)
 The initial wireframe/comp:
 ![Initial wireframe/comp](http://i.imgur.com/kXKRfGa.png)
