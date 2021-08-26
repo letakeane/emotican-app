@@ -56,6 +56,11 @@ The biggest challenges I've run into have been correctly formatting the data pul
 
 I built this using Turing's 'express boilerplate', because although it doesn't utilize it now, a future iteration of *emotican* will need it. I am also a greener-than-novice with express; I hope to use future iterations of this project to understand it better.
 
+#### Design:
+
+_Note: The phrase "autistic youth" and similar are used instead of person-first language ("children with autism") because the autism community largely wishes to be labeled and addressed with condition-first language._
+
+The color palette and font of this application were chosen based on research into best practices for both autism in youth and dyslexia (often co-morbid conditions which are some of the primary causes of low-affect in children). Unlike common design/usability practices, low-contrast colors tested best with autistic children in aiding focus and attention. Similarly, a serifed font was chosen for its distinct letterforms; people with dyslexia report better readability when fonts have unique letter forms (unlike many sans-serif fonts, which have uniform shapes).
 
 #### Future goals:
 
