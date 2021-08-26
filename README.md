@@ -1,6 +1,6 @@
 ## Project Name & Pitch
 ### *emotican*:
-Many children, due to autism, developmental delays, or trauma have difficulty nonverbally communicating their emotions through facial expressions.
+Many children, due to autism, developmental delays, or trauma have difficulty nonverbally communicating their emotions through facial expressions (sometimes this is known as "low affect").
 
 A common practice in behavioral therapy is to build up muscle memory by playing "emotion charades" - the child is given an emotion to perform, and is also tasked with guessing what emotion another person is expressing.
 
@@ -10,7 +10,7 @@ Built with React, this 'game' utilizes Microsoft's Cognitive Services Emotion AP
 
 <!-- This project is currently in development. Next steps are to create components and containers.
  -->
- This project is currently in an icebox and no further development is planned. The Azure facial emotion API this app is built on is no longer supported by Microsoft.
+ This project is currently in an icebox and no further development is planned.
  
 ## Project Screen Shot(s)
 The initial wireframe/comp:
