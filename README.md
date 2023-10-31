@@ -10,7 +10,9 @@ Built with React, this 'game' utilizes Microsoft's Cognitive Services Emotion AP
 
 <!-- This project is currently in development. Next steps are to create components and containers.
  -->
- This project is currently in an icebox and no further development is planned.
+ This project is currently in an icebox and no further development is planned. The key facial emotion recognition API hosted by Microsoft was deprecated and no longer active as of 2019.
+
+ It was built as a solo project while I was a student learning React in 2017, over the course of about three weeks in May and June of that year.
  
 ## Project Screen Shot(s)
 The initial wireframe/comp:
