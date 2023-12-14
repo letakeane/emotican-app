@@ -32,11 +32,11 @@ Probably my favorite moment from v0.5 usability tests:
 
 To use:
 * Clone down the repo
-* ```$ npm install```
-* ```$ cd emotican-express/app/components```
-* ```$ touch key.js```
-* ```$ atom .```
-* In the ```key.js``` file,
+* Install dependencies. ```$ npm install```
+* Change into the directory. ```$ cd emotican-express/app/components```
+* Create a new file in the root of the directory. ```$ touch key.js```
+* Open in your code editor.
+* In the new ```key.js``` file,
     * add ```export const key = 'YOUR_API_KEY'``` which you can get from Microsoft Cognitive Services
 * ```$ npm start```
 * Open your browser to ```localhost:3000```
